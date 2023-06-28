@@ -13,9 +13,89 @@
   <property name="windowTitle">
    <string>Config</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="qtCreatorLocation">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>751</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Qt Creator位置</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveConfig">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>560</y>
+      <width>101</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>保存</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="scaleFactorEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>751</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>1.0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1.25</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1.5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1.75</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2.0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2.25</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2.5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2.75</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3.0</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
  </widget>
  <resources/>
  <connections/>

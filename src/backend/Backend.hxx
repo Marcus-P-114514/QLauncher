@@ -4,6 +4,7 @@
 #include "QWidget"
 #include "QPoint"
 #include "QCursor"
+#include "QSettings"
 #include "QSystemTrayIcon"
 #include "../tray/Tray.hxx"
 
@@ -21,6 +22,14 @@ public:
     void updateMenuPosition(QPoint position);
 
     void trayActivated(QSystemTrayIcon::ActivationReason pressStatus);
+
+    QString readQtCreatorPath();
+
+    QString readScaleFactor();
+
+    void updatePath(QString qtCreatorLocation);
+
+    void updateScaleFactor(QString scaleFactor);
 
 signals:
 

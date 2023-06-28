@@ -4,6 +4,7 @@
 #include "QWidget"
 #include "QGraphicsDropShadowEffect"
 #include "../config/Config.hxx"
+#include "../backend/Backend.hxx"
 
 namespace Ui {
 class Tray;
@@ -23,6 +24,10 @@ private slots:
     void on_hideApp_clicked();
 
     void on_openSettings_clicked();
+
+    void on_launchQtDesigner_clicked();
+
+    void on_launchQtCreator_clicked();
 
 private:
     Ui::Tray *ui;

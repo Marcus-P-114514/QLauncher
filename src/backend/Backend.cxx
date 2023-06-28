@@ -49,3 +49,15 @@ void Backend::updateScaleFactor(QString scaleFactor){
     configRead->setValue("Default/QtScaleFactor", scaleFactor);
     delete configRead;
 }
+
+void Backend::startQtCreator(QString location, QString scaleFactor){
+    QFile updateScript("./cache/script.cmd");
+    updateScript.open(QIODevice::ReadWrite);
+    QString scriptContent = "set QT_SCALE_FACTOR=" + scaleFactor + "\n start " + location;
+    updateScript.write(scriptContent.toUtf8());
+    updateScript.close();
+    QProcess launcherProcess(0);
+    launcherProcess.start("./cache/script.cmd");
+    launcherProcess.waitForStarted();
+    launcherProcess.waitForFinished();
+}

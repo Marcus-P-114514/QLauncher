@@ -42,5 +42,20 @@ void Tray::on_openSettings_clicked()
 {
     Config * configWindow = new Config;
     configWindow->show();
+    this->hide();
+}
+
+
+void Tray::on_launchQtDesigner_clicked()
+{
+
+}
+
+
+void Tray::on_launchQtCreator_clicked()
+{
+    Backend * backendHelper = new Backend;
+    backendHelper->startQtCreator(backendHelper->readQtCreatorPath(), backendHelper->readScaleFactor());
+    this->hide();
 }
 

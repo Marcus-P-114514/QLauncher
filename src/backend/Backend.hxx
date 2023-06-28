@@ -5,6 +5,9 @@
 #include "QPoint"
 #include "QCursor"
 #include "QSettings"
+#include "QFile"
+#include "QDir"
+#include "QProcess"
 #include "QSystemTrayIcon"
 #include "../tray/Tray.hxx"
 
@@ -30,6 +33,8 @@ public:
     void updatePath(QString qtCreatorLocation);
 
     void updateScaleFactor(QString scaleFactor);
+
+    void startQtCreator(QString location, QString scaleFactor);
 
 signals:
 

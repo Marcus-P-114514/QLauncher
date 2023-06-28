@@ -57,3 +57,6 @@ compile_commands.json
 # Qt Builds
 build/debug/*
 build/release/*
+
+# Photoshop Files
+*.psd

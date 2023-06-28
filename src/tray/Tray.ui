@@ -7,38 +7,35 @@
     <x>0</x>
     <y>0</y>
     <width>190</width>
-    <height>242</height>
+    <height>246</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#Tray {
-	background: #F2EAD3;
-	border: 2px solid #DFD7BF;
-	border-radius: 7px;
-}</string>
+   <string notr="true"/>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
-    <number>8</number>
+    <number>0</number>
    </property>
    <property name="topMargin">
-    <number>8</number>
+    <number>0</number>
    </property>
    <property name="rightMargin">
-    <number>8</number>
+    <number>0</number>
    </property>
    <property name="bottomMargin">
-    <number>8</number>
+    <number>0</number>
    </property>
    <item row="0" column="0">
-    <widget class="QFrame" name="outterFrame">
+    <widget class="QFrame" name="menuContainer">
      <property name="styleSheet">
-      <string notr="true">#outterFrame {
+      <string notr="true">#menuContainer {
+	background: #F2EAD3;
 	border: 2px solid #DFD7BF;
-	border-radius: 30px;
+	border-radius: 7px;
 }</string>
      </property>
      <property name="frameShape">
@@ -47,25 +44,25 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
       <property name="leftMargin">
-       <number>3</number>
+       <number>8</number>
       </property>
       <property name="topMargin">
-       <number>3</number>
+       <number>8</number>
       </property>
       <property name="rightMargin">
-       <number>3</number>
+       <number>8</number>
       </property>
       <property name="bottomMargin">
-       <number>3</number>
+       <number>8</number>
       </property>
       <item>
-       <widget class="QFrame" name="innerFrame">
+       <widget class="QFrame" name="outterFrame">
         <property name="styleSheet">
-         <string notr="true">#innerFrame {
-	border: 3px solid #DFD7BF;
-	border-radius: 0px;
+         <string notr="true">#outterFrame {
+	border: 2px solid #DFD7BF;
+	border-radius: 30px;
 }</string>
         </property>
         <property name="frameShape">
@@ -74,166 +71,25 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_2">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="leftMargin">
+          <number>3</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="rightMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
          <item>
-          <widget class="QPushButton" name="launchQtCreator">
+          <widget class="QFrame" name="innerFrame">
            <property name="styleSheet">
-            <string notr="true">QPushButton {
-	color: #3F2305;
-	background: #F2EAD3;
-	border: 0px solid #F2EAD3;
-	border-radius: 7px;
-	font-size: 14px;
-	padding: 5px;
-}
-
-QPushButton::hover {
-	color: #3F2305;
-	background: #DFD7BF;
-	border: 0px solid #DFD7BF;
-	border-radius: 7px;
-	font-size: 14px;
-	padding: 5px;
-}
-
-QPushButton::clicked {
-	color: #F5F5F5;
-	background: #3F2305;
-	border: 0px solid #3F2305;
-	border-radius: 7px;
-	font-size: 14px;
-	padding: 5px;
-}
-
-QPushButton::pressed {
-	color: #F5F5F5;
-	background: #3F2305;
-	border: 0px solid #3F2305;
-	border-radius: 7px;
-	font-size: 14px;
-	padding: 5px;
-}</string>
-           </property>
-           <property name="text">
-            <string>启动Qt Creator</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="launchQtDesigner">
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-	color: #3F2305;
-	background: #F2EAD3;
-	border: 0px solid #F2EAD3;
-	border-radius: 7px;
-	font-size: 14px;
-	padding: 5px;
-}
-
-QPushButton::hover {
-	color: #3F2305;
-	background: #DFD7BF;
-	border: 0px solid #DFD7BF;
-	border-radius: 7px;
-	font-size: 14px;
-	padding: 5px;
-}
-
-QPushButton::clicked {
-	color: #F5F5F5;
-	background: #3F2305;
-	border: 0px solid #3F2305;
-	border-radius: 7px;
-	font-size: 14px;
-	padding: 5px;
-}
-
-QPushButton::pressed {
-	color: #F5F5F5;
-	background: #3F2305;
-	border: 0px solid #3F2305;
-	border-radius: 7px;
-	font-size: 14px;
-	padding: 5px;
-}</string>
-           </property>
-           <property name="text">
-            <string>启动 Qt Designer</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="openSettings">
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-	color: #3F2305;
-	background: #F2EAD3;
-	border: 0px solid #F2EAD3;
-	border-radius: 7px;
-	font-size: 14px;
-	padding: 5px;
-}
-
-QPushButton::hover {
-	color: #3F2305;
-	background: #DFD7BF;
-	border: 0px solid #DFD7BF;
-	border-radius: 7px;
-	font-size: 14px;
-	padding: 5px;
-}
-
-QPushButton::clicked {
-	color: #F5F5F5;
-	background: #3F2305;
-	border: 0px solid #3F2305;
-	border-radius: 7px;
-	font-size: 14px;
-	padding: 5px;
-}
-
-QPushButton::pressed {
-	color: #F5F5F5;
-	background: #3F2305;
-	border: 0px solid #3F2305;
-	border-radius: 7px;
-	font-size: 14px;
-	padding: 5px;
-}</string>
-           </property>
-           <property name="text">
-            <string>设置</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QFrame" name="trayDivider">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>3</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>3</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">#trayDivider {
-	color: #DFD7BF;
-	background: #DFD7BF;
-	border: 0px solid #DFD7BF;
+            <string notr="true">#innerFrame {
+	border: 3px solid #DFD7BF;
 	border-radius: 0px;
-	font-size: 14px;
 }</string>
            </property>
            <property name="frameShape">
@@ -242,12 +98,11 @@ QPushButton::pressed {
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="hideApp">
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QPushButton" name="launchQtCreator">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
 	color: #3F2305;
 	background: #F2EAD3;
 	border: 0px solid #F2EAD3;
@@ -282,16 +137,16 @@ QPushButton::pressed {
 	font-size: 14px;
 	padding: 5px;
 }</string>
-           </property>
-           <property name="text">
-            <string>隐藏</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="quitApp">
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+              </property>
+              <property name="text">
+               <string>启动Qt Creator</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="launchQtDesigner">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
 	color: #3F2305;
 	background: #F2EAD3;
 	border: 0px solid #F2EAD3;
@@ -326,24 +181,196 @@ QPushButton::pressed {
 	font-size: 14px;
 	padding: 5px;
 }</string>
-           </property>
-           <property name="text">
-            <string>退出</string>
-           </property>
+              </property>
+              <property name="text">
+               <string>启动 Qt Designer</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="openSettings">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	color: #3F2305;
+	background: #F2EAD3;
+	border: 0px solid #F2EAD3;
+	border-radius: 7px;
+	font-size: 14px;
+	padding: 5px;
+}
+
+QPushButton::hover {
+	color: #3F2305;
+	background: #DFD7BF;
+	border: 0px solid #DFD7BF;
+	border-radius: 7px;
+	font-size: 14px;
+	padding: 5px;
+}
+
+QPushButton::clicked {
+	color: #F5F5F5;
+	background: #3F2305;
+	border: 0px solid #3F2305;
+	border-radius: 7px;
+	font-size: 14px;
+	padding: 5px;
+}
+
+QPushButton::pressed {
+	color: #F5F5F5;
+	background: #3F2305;
+	border: 0px solid #3F2305;
+	border-radius: 7px;
+	font-size: 14px;
+	padding: 5px;
+}</string>
+              </property>
+              <property name="text">
+               <string>设置</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="trayDivider">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>3</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>3</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#trayDivider {
+	color: #DFD7BF;
+	background: #DFD7BF;
+	border: 0px solid #DFD7BF;
+	border-radius: 0px;
+	font-size: 14px;
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="hideApp">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	color: #3F2305;
+	background: #F2EAD3;
+	border: 0px solid #F2EAD3;
+	border-radius: 7px;
+	font-size: 14px;
+	padding: 5px;
+}
+
+QPushButton::hover {
+	color: #3F2305;
+	background: #DFD7BF;
+	border: 0px solid #DFD7BF;
+	border-radius: 7px;
+	font-size: 14px;
+	padding: 5px;
+}
+
+QPushButton::clicked {
+	color: #F5F5F5;
+	background: #3F2305;
+	border: 0px solid #3F2305;
+	border-radius: 7px;
+	font-size: 14px;
+	padding: 5px;
+}
+
+QPushButton::pressed {
+	color: #F5F5F5;
+	background: #3F2305;
+	border: 0px solid #3F2305;
+	border-radius: 7px;
+	font-size: 14px;
+	padding: 5px;
+}</string>
+              </property>
+              <property name="text">
+               <string>隐藏</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="quitApp">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	color: #3F2305;
+	background: #F2EAD3;
+	border: 0px solid #F2EAD3;
+	border-radius: 7px;
+	font-size: 14px;
+	padding: 5px;
+}
+
+QPushButton::hover {
+	color: #3F2305;
+	background: #DFD7BF;
+	border: 0px solid #DFD7BF;
+	border-radius: 7px;
+	font-size: 14px;
+	padding: 5px;
+}
+
+QPushButton::clicked {
+	color: #F5F5F5;
+	background: #3F2305;
+	border: 0px solid #3F2305;
+	border-radius: 7px;
+	font-size: 14px;
+	padding: 5px;
+}
+
+QPushButton::pressed {
+	color: #F5F5F5;
+	background: #3F2305;
+	border: 0px solid #3F2305;
+	border-radius: 7px;
+	font-size: 14px;
+	padding: 5px;
+}</string>
+              </property>
+              <property name="text">
+               <string>退出</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="traySpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>0</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
           </widget>
-         </item>
-         <item>
-          <spacer name="traySpacer">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>0</height>
-            </size>
-           </property>
-          </spacer>
          </item>
         </layout>
        </widget>

@@ -1,7 +1,9 @@
 ﻿#ifndef TRAY_HXX
 #define TRAY_HXX
 
-#include <QWidget>
+#include "QWidget"
+#include "QGraphicsDropShadowEffect"
+#include "../config/Config.hxx"
 
 namespace Ui {
 class Tray;
@@ -19,6 +21,8 @@ private slots:
     void on_quitApp_clicked();
 
     void on_hideApp_clicked();
+
+    void on_openSettings_clicked();
 
 private:
     Ui::Tray *ui;

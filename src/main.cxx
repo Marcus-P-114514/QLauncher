@@ -12,9 +12,6 @@ int main(int argc, char *argv[])
     trayIcon->setIcon(QIcon(":/icon/icon.png"));
     trayIcon->show();
 
-    Config w;
-    w.show();
-
     Tray t;
     t.show();
     return a.exec();

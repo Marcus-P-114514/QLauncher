@@ -6,6 +6,7 @@ Config::Config(QWidget *parent)
     , ui(new Ui::Config)
 {
     ui->setupUi(this);
+    this->setWindowIcon(QIcon(":/icon/icon.png"));
 }
 
 Config::~Config()

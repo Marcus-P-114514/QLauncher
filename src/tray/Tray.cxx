@@ -16,6 +16,8 @@ Tray::Tray(QWidget *parent) :
     menuShadow->setBlurRadius(16);
     ui->menuContainer->setGraphicsEffect(menuShadow);
     this->setContentsMargins(10,10,10,10);
+
+    ui->launchQtDesigner->setVisible(0);
 }
 
 Tray::~Tray()

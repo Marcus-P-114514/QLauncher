@@ -16,10 +16,16 @@ void Backend::updateMenuPosition(QPoint position){
 }
 
 void Backend::trayActivated(QSystemTrayIcon::ActivationReason pressStatus){
-    Tray * trayHelper = new Tray;
-    updateMenuPosition(QCursor::pos());
-    trayHelper->move(correctMenuPosition);
-    trayHelper->show();
+    switch(pressStatus){
+        case QSystemTrayIcon::DoubleClick:
+            startQtCreator(readQtCreatorPath(), readScaleFactor());
+
+        default:
+            Tray * trayHelper = new Tray;
+            updateMenuPosition(QCursor::pos());
+            trayHelper->move(correctMenuPosition);
+            trayHelper->show();
+    }
 }
 
 QString Backend::readQtCreatorPath(){

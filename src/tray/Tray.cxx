@@ -18,6 +18,7 @@ Tray::Tray(QWidget *parent) :
     this->setContentsMargins(10,10,10,10);
 
     ui->launchQtDesigner->setVisible(0);
+    ui->menuContainer->setFixedHeight(200);
 }
 
 Tray::~Tray()

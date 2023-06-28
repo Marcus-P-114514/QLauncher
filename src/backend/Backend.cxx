@@ -9,7 +9,8 @@ void Backend::initTray(){
 
 void Backend::updateMenuPosition(QPoint position){
     int correctX = position.x() - 199;
-    int correctY = position.y() - 246;
+    //int correctY = position.y() - 246;
+    int correctY = position.y() - 200;
     QPoint tempMousePoint(correctX, correctY);
     correctMenuPosition = tempMousePoint;
 }

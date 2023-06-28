@@ -9,13 +9,16 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    src/tray/Tray.cxx \
     src\main.cxx \
     src\Config\Config.cxx
 
 HEADERS += \
+    src/tray/Tray.hxx \
     src\Config\Config.hxx
 
 FORMS += \
+    src/tray/Tray.ui \
     src\Config\Config.ui
 
 # Default rules for deployment.

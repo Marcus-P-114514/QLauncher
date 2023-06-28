@@ -1,5 +1,6 @@
 ﻿#include "Config.hxx"
 #include "ui_Config.h"
+#include "QSystemTrayIcon"
 
 Config::Config(QWidget *parent)
     : QMainWindow(parent)

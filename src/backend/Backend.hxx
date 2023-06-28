@@ -1,13 +1,26 @@
-#ifndef BACKEND_HXX
+﻿#ifndef BACKEND_HXX
 #define BACKEND_HXX
 
-#include <QWidget>
+#include "QWidget"
+#include "QPoint"
+#include "QCursor"
+#include "QSystemTrayIcon"
+#include "../tray/Tray.hxx"
 
 class Backend : public QWidget
 {
     Q_OBJECT
+
+private:
+    QPoint correctMenuPosition;
+
 public:
-    explicit Backend(QWidget *parent = nullptr);
+
+    void initTray();
+
+    void updateMenuPosition(QPoint position);
+
+    void trayActivated(QSystemTrayIcon::ActivationReason pressStatus);
 
 signals:
 

@@ -1,8 +1,7 @@
 ﻿#include "config/Config.hxx"
-#include "tray/Tray.hxx"
+#include "backend/Backend.hxx"
 
 #include "QApplication"
-#include "QSystemTrayIcon"
 
 int main(int argc, char *argv[])
 {
@@ -10,11 +9,8 @@ int main(int argc, char *argv[])
 
     QApplication::setQuitOnLastWindowClosed(false);
 
-    QSystemTrayIcon * trayIcon = new QSystemTrayIcon;
-    trayIcon->setIcon(QIcon(":/icon/icon.png"));
-    trayIcon->show();
+    Backend * backendHelper = new Backend;
+    backendHelper->initTray();
 
-    Tray t;
-    t.show();
     return a.exec();
 }

@@ -7,7 +7,7 @@ Tray::Tray(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    setWindowFlags(Qt::FramelessWindowHint);
+    setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
     setAttribute(Qt::WA_TranslucentBackground);
 
     QGraphicsDropShadowEffect *menuShadow = new QGraphicsDropShadowEffect(ui->menuContainer);

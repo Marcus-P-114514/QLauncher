@@ -1,4 +1,4 @@
-#ifndef TRAY_HXX
+﻿#ifndef TRAY_HXX
 #define TRAY_HXX
 
 #include <QWidget>
@@ -14,6 +14,11 @@ class Tray : public QWidget
 public:
     explicit Tray(QWidget *parent = nullptr);
     ~Tray();
+
+private slots:
+    void on_quitApp_clicked();
+
+    void on_hideApp_clicked();
 
 private:
     Ui::Tray *ui;
